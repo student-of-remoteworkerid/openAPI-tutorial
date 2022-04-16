@@ -1,10 +1,19 @@
 {
     "openapi": "3.0.3",
     "info": {
-      "title": "Todolist RESTful API",
-      "version": "1",
-      "description": "OPENAPI for Todolist RESTful API",
-      "termsOfService": "https://www.programmerzamannow.com"
+        "title": "Todolist RESTful API",
+        "version": "1",
+        "description": "OpenAPI for Todolist RESTful API",
+        "termsOfService": "https://www.programmerzamannow.com",
+        "contact": {
+            "name": "Muhammad Shaufi Imanulhaq",
+            "email": "shaufiman@gmail.com",
+            "url": "https://www.programmerzamannow.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/license/LICENSE-2.0"
+        }
     },
     "servers": [],
     "paths": {}
