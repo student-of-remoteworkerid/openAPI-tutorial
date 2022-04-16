@@ -1,0 +1,11 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+      "title": "Todolist RESTful API",
+      "version": "1",
+      "description": "OPENAPI for Todolist RESTful API",
+      "termsOfService": "https://www.programmerzamannow.com"
+    },
+    "servers": [],
+    "paths": {}
+  }
