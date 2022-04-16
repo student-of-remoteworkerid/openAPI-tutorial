@@ -18,7 +18,7 @@
     "servers": [
         {
             "description": "Todolist RESTful API",
-            "url": "https://{environment}.programmerzamannow/API/v1",
+            "url": "https://{environment}.programmerzamannow/api/v1",
             "variables": {
                 "environment": {
                     "description": "Server Environment",
@@ -33,5 +33,9 @@
             }
         }
     ],
+    "externalDocs": {
+        "description": "Youtube Programmer Zaman Now",
+        "url": "https://www.youtube.com/c/ProgrammerZamanNow"
+    },
     "paths": {}
   }
