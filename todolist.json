@@ -64,6 +64,16 @@
                             "nullable": true,
                             "minLength": 1,
                             "maxLength": 100
+                        },
+                        "examples": {
+                            "python": {
+                                "description": "Examples name Python",
+                                "value": "Python"
+                            },
+                            "JavaScript": {
+                                "description": "Example name JavaScript",
+                                "value": "JavaScript"
+                            }
                         }
                     }
                 ],
@@ -101,6 +111,30 @@
                                         }
                                     }
                                 }
+                            },
+                            "examples": {
+                                "python": {
+                                    "description": "Example create todolist Python",
+                                    "value": {
+                                        "name": "Python",
+                                        "priority": 3,
+                                        "tags": [
+                                            "Python",
+                                            "Programming"
+                                        ]
+                                    }
+                                },
+                                "javascript": {
+                                    "description": "Example create todolist JavaScript",
+                                    "value": {
+                                        "name": "JavaScript",
+                                        "priority": 5,
+                                        "tags": [
+                                            "JavaScript",
+                                            "Programming"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -124,6 +158,16 @@
                             "type": "string",
                             "minLength": 1,
                             "maxLength": 100
+                        },
+                        "examples": {
+                            "python": {
+                                "description": "Sampe todolist id for Python",
+                                "value": "1"
+                            },
+                            "javascript": {
+                                "description": "Sampe todolist id for Python",
+                                "value": "2"
+                            }
                         }
                     }
                 ],
@@ -153,6 +197,30 @@
                                             "type": "string",
                                             "minLength": 1
                                         }
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "python": {
+                                    "description": "Example create todolist Python",
+                                    "value": {
+                                        "name": "Python",
+                                        "priority": 3,
+                                        "tags": [
+                                            "Python",
+                                            "Programming"
+                                        ]
+                                    }
+                                },
+                                "javascript": {
+                                    "description": "Example create todolist JavaScript",
+                                    "value": {
+                                        "name": "JavaScript",
+                                        "priority": 5,
+                                        "tags": [
+                                            "JavaScript",
+                                            "Programming"
+                                        ]
                                     }
                                 }
                             }
