@@ -78,6 +78,60 @@
                     }
                 ],
                 "responses": {
+                    "200": {
+                        "description": "Successs get all todolist",
+                        "content": {
+                            "applicaion/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "priority": {
+                                                "type": "number",
+                                                "format": "int32"
+                                            },
+                                            "tags": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "success": {
+                                        "description": "Example success get all todolist",
+                                        "value": [
+                                            {
+                                                "id": "1",
+                                                "name": "Python",
+                                                "priority": 3,
+                                                "tags": [
+                                                    "Python", "Programming"
+                                                ]
+                                            },
+                                            {
+                                                "id": "2",
+                                                "name": "JavaScript",
+                                                "priority": 5,
+                                                "tags": [
+                                                    "JavaScript", "Programming"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "post": {
@@ -140,7 +194,60 @@
                     }
                 },
                 "responses": {
-
+                    "200": {
+                        "description": "Success create todolist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "priority": {
+                                            "type": "number",
+                                            "format": "int32"
+                                        },
+                                        "tags": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "Python": {
+                                        "description": "Success create python todolist",
+                                        "value": {
+                                            "id": "1",
+                                            "name": "Python",
+                                            "priority": 3,
+                                            "tags": [
+                                                "Python",
+                                                "Programming"
+                                            ]
+                                        }
+                                    },
+                                    "JavaScript": {
+                                        "description": "Success create javascript todolist",
+                                        "value": {
+                                            "id": "2",
+                                            "name": "JavaScript",
+                                            "priority": 5,
+                                            "tags": [
+                                                "JavaScript",
+                                                "Programming"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }    
         },
@@ -228,7 +335,60 @@
                     }
                 },
                 "responses": {
-
+                    "200": {
+                        "description": "Success create todolist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "priority": {
+                                            "type": "number",
+                                            "format": "int32"
+                                        },
+                                        "tags": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "Python": {
+                                        "description": "Success create python todolist",
+                                        "value": {
+                                            "id": "1",
+                                            "name": "Python",
+                                            "priority": 3,
+                                            "tags": [
+                                                "Python",
+                                                "Programming"
+                                            ]
+                                        }
+                                    },
+                                    "JavaScript": {
+                                        "description": "Success create javascript todolist",
+                                        "value": {
+                                            "id": "2",
+                                            "name": "JavaScript",
+                                            "priority": 5,
+                                            "tags": [
+                                                "JavaScript",
+                                                "Programming"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             },
             "delete": {
@@ -248,9 +408,54 @@
                     }
                 ],
                 "responses": {
-
+                    "200": {
+                        "description": "Success delete todolist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "success": {
+                                        "description": "Success delete todolist",
+                                        "value": {
+                                            "success": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Failed delete not found todolist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "success": {
+                                        "description": "Failed delete todolist",
+                                        "value": {
+                                            "success": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-  }
+}
